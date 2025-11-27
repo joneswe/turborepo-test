@@ -1,0 +1,11 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "paths": {
+      "@repo/ui/*": ["../../packages/ui/src/*"],
+      "@repo/core/*": ["../../packages/core/src/*"],
+      "@repo/utils/*": ["../../packages/utils/src/*"]
+    }
+  },
+  "include": ["**/*.ts", "**/*.tsx"]
+}

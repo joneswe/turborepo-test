@@ -1,0 +1,30 @@
+{
+  "name": "mobile",
+  "version": "0.1.0",
+  "private": true,
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "lint": "expo lint",
+    "build": "echo 'React Native builds are handled via Expo'"
+  },
+  "dependencies": {
+    "@turborepo-test/shared": "^0.1.0",
+    "@turborepo-test/shared-ui": "^0.1.0",
+    "expo": "^50.0.17",
+    "expo-status-bar": "~1.11.1",
+    "react": "^18.2.0",
+    "react-native": "0.73.6",
+    "tamagui": "^1.126.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.4",
+    "babel-plugin-module-resolver": "^5.0.0",
+    "@types/react": "^18.2.41",
+    "@types/react-native": "^0.73.0",
+    "typescript": "^5.4.5"
+  }
+}

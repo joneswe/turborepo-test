@@ -1,0 +1,18 @@
+{
+  "name": "turborepo-test",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "npm@10.7.0",
+  "scripts": {
+    "dev:web": "turbo run dev --filter=web",
+    "dev:mobile": "turbo run start --filter=mobile",
+    "build": "turbo run build"
+  },
+  "devDependencies": {
+    "turbo": "^2.0.6"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "allowJs": false,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@turborepo-test/shared": ["packages/shared/src/index"],
+      "@turborepo-test/shared/*": ["packages/shared/src/*"],
+      "@turborepo-test/shared-ui": ["packages/shared-ui/src/index"],
+      "@turborepo-test/shared-ui/*": ["packages/shared-ui/src/*"]
+    }
+  },
+  "exclude": ["node_modules", "dist", "build"]
+}

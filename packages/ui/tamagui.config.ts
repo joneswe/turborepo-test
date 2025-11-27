@@ -1,27 +1,15 @@
-import { createTamagui } from "tamagui";
-import { createTokens } from "@tamagui/tokens";
+import { themes } from './themes'
+import { defaultConfig } from '@tamagui/config/v4'
+import { createTamagui } from 'tamagui'
 
-const tokens = createTokens({
-  color: {
-    background: "#ffffff",
-    text: "#111827",
-    primary: "#0f766e"
-  }
-});
-
-const config = createTamagui({
-  tokens,
-  themes: {
-    light: {
-      background: tokens.color.background,
-      color: tokens.color.text
-    }
-  }
-});
+export const config = createTamagui({
+  ...defaultConfig,
+  themes,
+})
 
 export default config;
 export type AppConfig = typeof config;
 
 declare module "tamagui" {
-  interface TamaguiCustomConfig extends AppConfig {}
+  interface TamaguiCustomConfig extends AppConfig { }
 }

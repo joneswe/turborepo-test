@@ -1,10 +1,15 @@
 import { useState } from "react";
 
-export function useAuth() {
-  const [user, setUser] = useState(null);
+export type User = {
+  id: string;
+  email: string;
+};
 
-  const login = async (email: string) => {
-    const fakeUser = { id: "1", email };
+export function useAuth() {
+  const [user, setUser] = useState<User | null>(null);
+
+  const login = async (email: string, _password?: string): Promise<User> => {
+    const fakeUser: User = { id: "1", email };
     setUser(fakeUser);
     return fakeUser;
   };

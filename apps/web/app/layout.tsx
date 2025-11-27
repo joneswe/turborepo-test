@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { UiProvider } from "@repo/ui/Provider";
+import { UiProvider } from "@repo/ui";
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (

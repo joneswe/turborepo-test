@@ -7,6 +7,8 @@
   "dependencies": {
     "tamagui": "^1.98.0",
     "@tamagui/config": "1.138.5"
+    ,
+    "@repo/core": "workspace:*"
   },
   "exports": {
     ".": "./src/index.ts",

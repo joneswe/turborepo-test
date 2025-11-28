@@ -1,6 +1,6 @@
 # Turborepo Monorepo
 
-A pnpm-based Turborepo workspace with a Next.js App Router web app, an Expo SDK 52 mobile app, and shared packages for UI (Tamagui), core logic, and utilities.
+A pnpm-based Turborepo workspace with a Next.js App Router web app, an Expo mobile app, and shared packages for UI (Tamagui), core logic, and utilities.
 
 ## Project Structure
 

@@ -6,8 +6,8 @@ A pnpm-based Turborepo workspace with a Next.js App Router web app, an Expo SDK 
 
 ```
 apps/
-  web/      # Next.js 14 app using App Router
-  mobile/   # Expo SDK 54 React Native app
+  web/      # Next.js app using App Router
+  mobile/   # Expo React Native app
 packages/
   ui/       # Shared Tamagui Provider and Button components
   core/     # Shared auth hook (useAuth)
